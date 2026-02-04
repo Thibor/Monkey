@@ -1,7 +1,7 @@
 # Monkey
 
 <div align="center" style="padding-top: 50px">
-<img src="/Resources/Monkey.jpg" />
+<img src="/Resources/Monkey.png" />
     <br>
     <br>
     <b><i>Small uci chess engine 2300 elo.</i></b>
