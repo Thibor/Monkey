@@ -3359,16 +3359,12 @@ static inline int SearchQuiescence(int alpha, int beta)
 	return alpha;
 }
 const int full_depth_moves = 4;
-
-// depth limit to consider reduction
 const int reduction_limit = 3;
 
 //negamax alpha beta search
 static inline int SearchAlpha(int alpha, int beta, int depth){
 	pv_length[ply] = ply;
 	int score;
-
-	// define hash flag
 	int hash_flag = hash_flag_alpha;
 
 	// if position repetition occurs
