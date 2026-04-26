@@ -4,7 +4,7 @@
 <img src="/Resources/Monkey.png" />
     <br>
     <br>
-    <b><i>Small uci chess engine 2300 elo.</i></b>
+    <b><i>Single file small uci chess engine 2300 elo.</i></b>
     <br>
     <br>
     <img src="https://img.shields.io/github/downloads/Thibor/Monkey/total?color=critical&style=for-the-badge">
