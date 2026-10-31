@@ -490,13 +490,9 @@ static inline U64 BishopAttackBB(U64 bb, U64 blockers) {
 	return Ray(bb, blockers, NW) | Ray(bb, blockers, NE) | Ray(bb, blockers, SW) | Ray(bb, blockers, SE);
 }
 
-//static inline U64 BishopAttack(const int sq, const U64 blockers) {return BishopAttackBB(bbSquare[sq], blockers);}
-
 static inline U64 RookAttackBB(U64 bb, U64 blockers) {
 	return Ray(bb, blockers, North) | Ray(bb, blockers, East) | Ray(bb, blockers, South) | Ray(bb, blockers, West);
 }
-
-//static inline U64 RookAttack(const int sq, const U64 blockers) {return RookAttackBB(bbSquare[sq], blockers);}
 
 static inline U64 KingAttackBB(const U64 bb) {
 	return (bb << 8) | (bb >> 8) | (((bb >> 1) | (bb >> 9) | (bb << 7)) & 0x7F7F7F7F7F7F7F7FULL) |
@@ -507,7 +503,7 @@ static inline U64 KingAttack(const int sq) {
 	return bbKingAttack[sq];
 }
 
-/* Flip the whole position: flip bitboards and swap sides (first 6 <-> last 6) */
+//Flip the whole position: flip bitboards and swap sides (first 6 <-> last 6)
 static void FlipPosition(Position* pos) {
 	// Flip ep bitboard and piece bitboards, then swap halves so index 0..5 (us) becomes opponent
 	for (int i = 0; i < PT_NB; ++i) {

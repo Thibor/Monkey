@@ -4,7 +4,7 @@
 <img src="/Resources/Monkey.png" />
     <br>
     <br>
-    <b><i>Single file small uci chess engine 2300 elo.</i></b>
+    <b><i>Single file small uci chess engine 2650 elo.</i></b>
     <br>
     <br>
     <img src="https://img.shields.io/github/downloads/Thibor/Monkey/total?color=critical&style=for-the-badge">
@@ -18,8 +18,10 @@ FIDE-rules-compliant chess engine
 
 ## Features
 
-- Single file c
-- Board: 12 x bitboard
+- Elo 2650
+- Single file
+- Board 12 bitboards
+- Evaluation 12 Piece Square Tables
 - En passant
 - Underpromotions (knight, bishop, rook)
 - 2-fold repetition detection
